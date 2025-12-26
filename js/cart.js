@@ -17,7 +17,7 @@ function renderProducts() {
     products.forEach((p, index) => {
         container.innerHTML += `
         <div class="product">
-            <img src="../../photos/${p.image}">
+            <img src="../photos/${p.image}">
             
             <div class="product-info">
                 <h3>${p.name}</h3>

@@ -229,7 +229,7 @@ const allProducts = {
 const productID = localStorage.getItem("selectedProduct");
 const p = allProducts[productID];
 if (p) {
-    document.getElementById("productImage").src = "../../photos/" + encodeURIComponent(p.image);
+    document.getElementById("productImage").src = "../photos/" + encodeURI(p.image);
     document.getElementById("productName").textContent = p.name;
     document.getElementById("productPrice").textContent = p.price;
 } else {
@@ -279,7 +279,7 @@ function loadYouMayLike() {
         const item = allProducts[id];
         likeBox.innerHTML += `
             <div class="like-card" onclick="openProduct('${id}')">
-                <img src="../../photos/${encodeURIComponent(item.image)}" />
+                <img src="../photos/${encodeURI(item.image)}" />
                 <h4>${item.name}</h4>
                 <span class="price">${item.price}</span>
             </div>
