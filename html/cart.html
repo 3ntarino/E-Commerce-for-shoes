@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+<header class="main-header">
+        
+        <a href="../../pages/home/index.html" class="logo-section">
+            <img src="../../photos/logos/kutuku.png" alt="Kutuku Logo">
+            <span class="site-name">Kutuku</span>
+        </a>
+
+        <nav class="nav-center">
+            <a href="../index.html">Home</a>
+            <a href="../html/cart.html">Cart</a>
+        </nav>
+
+        <a href="../../pages/profile/index.html" class="profile-icon">
+            <img id="header-profile-img" src="../../photos/logos/profile.png" alt="Profile">
+        </a>
+
+    </header>
+
+
+    <h1 class="title">Your Cart</h1>
+
+    <div class="container">
+
+        <div class="items-section">
+
+            <div id="items"></div>
+        </div>
+
+        <div class="summary">
+            <h2>Order Summary</h2>
+            <p>Subtotal: $<span id="subtotal">0</span></p>
+            <p>Shipping: Free</p>
+            <p>Tax: $0.00</p>
+            <h3>Total Cost: $<span id="total">0</span></h3>
+
+            <button class="checkout">Checkout</button>
+        </div>
+
+    </div>
+
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>

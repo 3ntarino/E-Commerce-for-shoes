@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/product.css" />
+</head>
+
+<body>
+    <header class="main-header">
+
+        <a href="../../pages/home/index.html" class="logo-section">
+            <img src="../../photos/logos/kutuku.png" alt="Kutuku Logo">
+            <span class="site-name">Kutuku</span>
+        </a>
+
+        <nav class="nav-center">
+            <a href="../index.html">Home</a>
+            <a href="../html/cart.html">Cart</a>
+        </nav>
+
+        <a href="../../pages/profile/index.html" class="profile-icon">
+            <img id="header-profile-img" src="../../photos/logos/profile.png" alt="Profile">
+        </a>
+
+    </header>
+    <div class="product-details-container">
+        <div class="product-image-box">
+            <img id="productImage" src="" alt="">
+        </div>
+        <div class="product-info-box">
+            <h2 id="productName"></h2>
+            <span class="price" id="productPrice"></span>
+            <p style="
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 25px;
+">
+                "Experience premium comfort and modern style with this high-quality sneaker, designed for all-day wear.
+                Built with durable materials, superior cushioning, and a sleek athletic look that matches any outfit."
+            </p>
+            <div class="size-label">Size:</div>
+
+            <div class="select-box">
+                <button class="see-more">37</button>
+                <button class="see-more">38</button>
+                <button class="see-more">39</button>
+                <button class="see-more">40</button>
+                <button class="see-more">41</button>
+                <button class="see-more">42</button>
+                <button class="see-more">43</button>
+                <button class="see-more">44</button>
+                <button class="see-more">45</button>
+                <button class="see-more">46</button>
+            </div>
+            <div class="quantity-box">
+                <label>Quantity:</label><br>
+                <input type="number" id="productQuantity" value="1" min="1" max="50" maxlength="3" minlength="1"
+                    required>
+            </div>
+            <div class="action-buttons">
+                <button id="addToCartBtn" style="text-align: center;">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="like-section">
+        <h3>You may also like</h3>
+        <div class="like-products" id="likeProducts"></div>
+    </div>
+
+    <script src="../js/product.js"></script>
+</body>
+
+</html>

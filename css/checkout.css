@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f5fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dce3eb;
+}
+
+.box h3 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.row {
+    border-top: 1px solid #e1e7ee;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.row:first-child {
+    border-top: none;
+}
+
+.label {
+    font-size: 14px;
+    color: #666;
+    min-width: 60px;
+}
+
+.value {
+    font-size: 16px;
+    color: #000;
+    flex: 1;
+}
+
+.value input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dce3eb;
+    border-radius: 5px;
+}
+
+.edit {
+    color: #0d6efd;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit.save {
+    color: #28a745;
+}
+
+#payment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+#payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #dce3eb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.expiry-cvv {
+    display: flex;
+    gap: 10px;
+}
+
+.expiry-cvv > div {
+    flex: 1;
+}
+
+.total-box {
+    margin-top: 20px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #dce3eb;
+    text-align: center;
+}
+
+.total-box h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.total-price {
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.pay-btn {
+    background: linear-gradient(135deg, #004bcc, #002f88);
+    color: white;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.25s ease;
+    box-shadow: 0 3px 10px rgba(0, 60, 180, 0.25);
+}
+
+.pay-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 60, 180, 0.35);
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 28px;
+    background: white;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-section img {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.site-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.nav-center {
+    position:fixed;
+    left: 45%;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-center a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #555;
+    text-decoration: none;
+}
+
+.nav-center a:hover {
+    color: var(--accent);
+}
+
+.profile-icon img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    object-fit: cover;
+    cursor: pointer;
+}

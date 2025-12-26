@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Shoes</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header class="header">
+        <img id="img1" src="photos/logos/kutuku.png" alt="Kutuku">
+        <div>
+            <h1>Kutuku</h1>
+            <h3>any shopping just from here</h3>
+        </div>
+        <div class = profile-icon>
+            <a href="/html/profile.html">
+                <img id="header-profile-img" src="../../photos/logos/profile.png" alt="Profile">
+            </a> </div>
+    </header>
+    <div class="categories-container">
+        
+        <button class="category-btn" data-brand="nike" onclick="selectCategory(this)">
+            <img src="../../photos/logos/nike.png" alt="Nike">
+            <span class="category-text">Nike</span>
+        </button>
+        <button class="category-btn" data-brand="adidas" onclick="selectCategory(this)">
+            <img src="../../photos/logos/adidas.png" alt="Adidas">
+            <span class="category-text">Adidas</span>
+        </button>
+        <button class="category-btn" data-brand="converse" onclick="selectCategory(this)">
+            <img src="../../photos/logos/converse.png" alt="Converse">
+            <span class="category-text">Converse</span>
+        </button>
+        <button class="category-btn" data-brand="puma" onclick="selectCategory(this)">
+            <img src="../../photos/logos/puma.png" alt="Puma">
+            <span class="category-text">Puma</span>
+        </button>
+        <button class="category-btn" data-brand="underArmour" onclick="selectCategory(this)">
+            <img src="../../photos/logos/underArmour.png" alt="Under Armour">
+            <span class="category-text">Under Armour</span>
+        </button>
+    </div>
+
+    <p class="intro-text">
+        Step into comfort and style with our iconic collection. Perfect for daily wear or hitting the courts.
+        Experience superior cushioning and timeless design selected just for you.
+    </p>
+
+    <div class="products">
+        
+        <div class="product-card" data-brand="nike" data-product-id="n1">
+            <div class="image-container">
+                <img src="../../photos/shoes/nike shoes/Nike Air Jordan 1 High (GreenWhite).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Nike Air Jordan 1 High<br>(Green-White)</h3>
+                <span class="price">$249.00</span>
+            </div>
+        </div>
+        <div class="product-card" data-brand="nike" data-product-id="n2">
+            <div class="image-container">
+                <img src="../../photos/shoes/nike shoes/Nike Air Force 1 High (BlackWhite).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Nike Air Force 1 High<br>(Black-White)</h3>
+                <span class="price">$249.00</span>
+            </div>
+        </div>
+        <div class="product-card" data-brand="nike" data-product-id="n3">
+            <div class="image-container">
+                <img src="../../photos/shoes/nike shoes/Nike Air Jordan 1 Mid (BlueRed).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Nike Air Jordan 1 High<br>(Blue-Red)</h3>
+                <span class="price">$249.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="nike" data-product-id="n4">
+            <div class="image-container">
+                <img src="../../photos/shoes/nike shoes/Air Jordan 1 Retro High.png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Air Jordan 1 Retro High</h3>
+                <span class="price">$259.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="nike" data-product-id="n5">
+            <div class="image-container">
+                <img src="../../photos/shoes/nike shoes/Nike Air Force 1 Low.png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Nike Air Force 1 Low</h3>
+                <span class="price">$149.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="nike" data-product-id="n6">
+            <div class="image-container">
+                <img src="../../photos/shoes/nike shoes/Nike Air Jordan 1 High (OrangeBlack).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Nike Air Jordan 1 High<br>(OrangeBlack)</h3>
+                <span class="price">$249.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="nike" data-product-id="n7">
+            <div class="image-container">
+                <img src="../../photos/shoes/nike shoes/Nike Air Jordan 1.png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Nike Air Jordan 1</h3>
+                <span class="price">$199.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="nike" data-product-id="n8">
+            <div class="image-container">
+                <img src="../../photos/shoes/nike shoes/Nike Toddler Dunk Low.png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Nike Toddler Dunk Low</h3>
+                <span class="price">$219.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="nike" data-product-id="n9">
+            <div class="image-container">
+                <img src="../../photos/shoes/nike shoes/Nike Unisex-Child Modern.png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Nike Unisex-Child Modern</h3>
+                <span class="price">$249.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="nike" data-product-id="n10">
+            <div class="image-container">
+                <img src="../../photos/shoes/nike shoes/Nike Air Max 95 (BlackYellow).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Nike Air Max 95 (BlackYellow)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="adidas" data-product-id="a1">
+            <div class="image-container">
+                <img src="../../photos/shoes/adidas shoes/adidas Men_s Ultraboost (Black).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>adidas Men's Ultraboost <br>(Black)</h3>
+                <span class="price">$199.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="adidas" data-product-id="a2">
+            <div class="image-container">
+                <img src="../../photos/shoes/adidas shoes/adidas Men_s Ultraboost (White).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>adidas Men's Ultraboost <br>(White)</h3>
+                <span class="price">$199.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="adidas" data-product-id="a3">
+            <div class="image-container">
+                <img src="../../photos/shoes/adidas shoes/adidas Men_s Ultraboost Light.png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>adidas Men's Ultraboost Light</h3>
+                <span class="price">$179.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="adidas" data-product-id="a4">
+            <div class="image-container">
+                <img src="../../photos/shoes/adidas shoes/adidas Men_s Ultraboost.png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>adidas Men's Ultraboost</h3>
+                <span class="price">$159.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="adidas" data-product-id="a5">
+            <div class="image-container">
+                <img src="../../photos/shoes/adidas shoes/adidas Women_s Ultraboost 23 Sneaker (Blue).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>adidas Men's Ultraboost 23 Sneaker <br>(Blue)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="adidas" data-product-id="a6">
+            <div class="image-container">
+                <img src="../../photos/shoes/adidas shoes/adidas Women_s Ultraboost 23 Sneaker (Gray).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>adidas Men's Ultraboost 23 Sneaker <br>(Gray)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="adidas" data-product-id="a7">
+            <div class="image-container">
+                <img src="../../photos/shoes/adidas shoes/adidas Women_s Ultraboost 23 Sneaker (Green).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>adidas Men's Ultraboost 23 Sneaker <br>(Green)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="adidas" data-product-id="a8">
+            <div class="image-container">
+                <img src="../../photos/shoes/adidas shoes/adidas Women_s Ultraboost 23 Sneaker (Pink).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>adidas Men's Ultraboost 23 Sneaker <br>(Pink)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="adidas" data-product-id="a9">
+            <div class="image-container">
+                <img src="../../photos/shoes/adidas shoes/adidas Women_s Ultraboost 23 Sneaker (White-Yellow).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>adidas Men's Ultraboost 23 Sneaker <br>(White-Yellow)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="adidas" data-product-id="a10">
+            <div class="image-container">
+                <img src="../../photos/shoes/adidas shoes/adidas Women_s Ultraboost 23 Sneaker (White).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>adidas Men's Ultraboost 23 Sneaker <br>(White)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="converse" data-product-id="c1">
+            <div class="image-container">
+                <img src="../../photos/shoes/converse shoes/Converse Chuck Taylor All Star (Black-White).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Converse Chuck Taylor All Star <br>(Black-White)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="converse" data-product-id="c2">
+            <div class="image-container">
+                <img src="../../photos/shoes/converse shoes/Converse Chuck Taylor All Star (Blue).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Converse Chuck Taylor All Star <br>(Blue)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="converse" data-product-id="c3">
+            <div class="image-container">
+                <img src="../../photos/shoes/converse shoes/Converse Chuck Taylor All Star (Green).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Converse Chuck Taylor All Star <br>(Green)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="converse" data-product-id="c4">
+            <div class="image-container">
+                <img src="../../photos/shoes/converse shoes/Converse Chuck Taylor All Star (Pink).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Converse Chuck Taylor All Star <br>(Pink)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="converse" data-product-id="c5">
+            <div class="image-container">
+                <img src="../../photos/shoes/converse shoes/Converse Chuck Taylor All Star (Purple).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Converse Chuck Taylor All Star <br>(Purple)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="converse" data-product-id="c6">
+            <div class="image-container">
+                <img src="../../photos/shoes/converse shoes/Converse Chuck Taylor All Star (Red).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Converse Chuck Taylor All Star <br>(Red)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="converse" data-product-id="c7">
+            <div class="image-container">
+                <img src="../../photos/shoes/converse shoes/Converse Chuck Taylor All Star (Sky Blue).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Converse Chuck Taylor All Star <br>(Sky Blue)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="converse" data-product-id="c8">
+            <div class="image-container">
+                <img src="../../photos/shoes/converse shoes/Converse Chuck Taylor All Star (White).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Converse Chuck Taylor All Star <br>(White)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="converse" data-product-id="c9">
+            <div class="image-container">
+                <img src="../../photos/shoes/converse shoes/Converse Chuck Taylor All Star (Yellow).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Converse Chuck Taylor All Star <br>(Yellow)</h3>
+                <span class="price">$189.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="converse" data-product-id="c10">
+            <div class="image-container">
+                <img src="../../photos/shoes/converse shoes/Converse Chuck Taylor All Star High(Black-White).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Converse Chuck Taylor All Star High<br>(Black-White)</h3>
+                <span class="price">$199.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="puma" data-product-id="p1">
+            <div class="image-container">
+                <img src="../../photos/shoes/puma shoes/Puma RSX Reinvention (Black-Pink).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Puma RS‑X Reinvention <br>(Black-Pink)</h3>
+                <span class="price">$249.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="puma" data-product-id="p2">
+            <div class="image-container">
+                <img src="../../photos/shoes/puma shoes/Puma RSX Reinvention (Paige).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Puma RS‑X Reinvention <br>(Paige)</h3>
+                <span class="price">$249.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="puma" data-product-id="p3">
+            <div class="image-container">
+                <img src="../../photos/shoes/puma shoes/Puma RSX Reinvention (White).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Puma RS‑X Reinvention <br>(White)</h3>
+                <span class="price">$249.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="puma" data-product-id="p4">
+            <div class="image-container">
+                <img src="../../photos/shoes/puma shoes/Puma X BMW.png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Puma X BMW</h3>
+                <span class="price">$299.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="puma" data-product-id="p5">
+            <div class="image-container">
+                <img src="../../photos/shoes/puma shoes/Puma X Ferrari.png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Puma X Ferrari</h3>
+                <span class="price">$289.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="underArmour" data-product-id="u1">
+            <div class="image-container">
+                <img src="../../photos/shoes/under armour shoes/Under Armour Charged Vantage (Black).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Under Armour Charged Vantage <br>(Black)</h3>
+                <span class="price">$149.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="underArmour" data-product-id="u2">
+            <div class="image-container">
+                <img src="../../photos/shoes/under armour shoes/Under Armour Charged Vantage (Grey).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Under Armour Charged Vantage <br>(Grey)</h3>
+                <span class="price">$149.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="underArmour" data-product-id="u3">
+            <div class="image-container">
+                <img src="../../photos/shoes/under armour shoes/Under Armour Charged Vantage (Orange).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Under Armour Charged Vantage <br>(Orange)</h3>
+                <span class="price">$149.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="underArmour" data-product-id="u4">
+            <div class="image-container">
+                <img src="../../photos/shoes/under armour shoes/Under Armour Charged Vantage (Pink).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Under Armour Charged Vantage <br>(Pink)</h3>
+                <span class="price">$149.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="underArmour" data-product-id="u5">
+            <div class="image-container">
+                <img src="../../photos/shoes/under armour shoes/Under Armour Charged Vantage (Purple).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Under Armour Charged Vantage <br>(Purple)</h3>
+                <span class="price">$149.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="underArmour" data-product-id="u6">
+            <div class="image-container">
+                <img src="../../photos/shoes/under armour shoes/Under Armour Charged Vantage (Red).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Under Armour Charged Vantage <br>(Red)</h3>
+                <span class="price">$149.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="underArmour" data-product-id="u7">
+            <div class="image-container">
+                <img src="../../photos/shoes/under armour shoes/Under Armour Charged Vantage (White).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Under Armour Charged Vantage <br>(White)</h3>
+                <span class="price">$149.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="underArmour" data-product-id="u8">
+            <div class="image-container">
+                <img src="../../photos/shoes/under armour shoes/Under Armour Charged Vantage (Black-White).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Under Armour Charged Vantage <br>(Black-White)</h3>
+                <span class="price">$149.00</span>
+            </div>
+        </div>
+        
+        <div class="product-card" data-brand="underArmour" data-product-id="u9">
+            <div class="image-container">
+                <img src="../../photos/shoes/under armour shoes/Under Armour Charged Vantage (Blue-White).png" alt="Shoe">
+            </div>
+            <div class="product-info">
+                <h3>Under Armour Charged Vantage <br>(Blue-White)</h3>
+                <span class="price">$149.00</span>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="js/home.js" defer></script>
+</body>
+</html>
